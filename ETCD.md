@@ -3,7 +3,7 @@
 ## Register services
 
 ```
-curl -L http://127.0.0.1:4001/v2/keys/services/servicename/serviceid -XPUT -d value="http://foo" -d ttl=5
+curl -L http://127.0.0.1:4001/v2/keys/services/servicename/serviceid -XPUT -d value="http://ip-of-service" -d ttl=5
 ```
 
 * `services` this part of the URI could be anything, it is just the path that you want to use.
@@ -13,8 +13,7 @@ curl -L http://127.0.0.1:4001/v2/keys/services/servicename/serviceid -XPUT -d va
 Full example
 
 ```
-curl -L http://127.0.0.1:4001/v2/keys/company/services/orders/orders12345 -XPUT \
-    -d value="http://aaa.bbb.ccc.ddd:8080" -d ttl=5
+curl -L http://127.0.0.1:4001/v2/keys/services/orders/orders12345 -XPUT -d value="http://ip-of-service:8080" -d ttl=5
 ```
 
 ## Service Health
