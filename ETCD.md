@@ -6,9 +6,9 @@
 curl -L http://127.0.0.1:4001/v2/keys/services/myservice/serviceid -XPUT -d value="http://foo" -d ttl=5
 ```
 
-`services` this part of the URI could be anything, it is just the path that you want to use.
-`myservice` this is the name of the service you want to register
-`serviceid` this is a unique id for the specific service instance you want to register.
+* `services` this part of the URI could be anything, it is just the path that you want to use.
+* `myservice` this is the name of the service you want to register
+* `serviceid` this is a unique id for the specific service instance you want to register.
 
 ## Service Health
 
